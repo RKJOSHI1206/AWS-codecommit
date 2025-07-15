@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install phase - nothing to install"
+
+  pre_build:
+    commands:
+      - echo "Pre-build phase - setup complete"
+
+  build:
+    commands:
+      - echo "Build phase - running dummy build task"
+      - echo "Hello, CodeBuild!"
+
+  post_build:
+    commands:
+      - echo "Post-build phase - finished!"
