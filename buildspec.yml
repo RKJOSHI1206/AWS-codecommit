@@ -18,6 +18,3 @@ phases:
     commands:
       - echo "Post-build phase - finished!"
 
-artifacts:
-  files:
-    - output.txt
