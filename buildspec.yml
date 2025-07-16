@@ -17,4 +17,8 @@ phases:
   post_build:
     commands:
       - echo "Post-build phase - finished!"
-
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+  base-directory: 'tph_pipeline/SourceArti'  
