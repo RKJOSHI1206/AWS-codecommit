@@ -13,12 +13,12 @@ phases:
     commands:
       - echo "Build phase - running dummy build task"
       - echo "Hello, CodeBuild!"
+      - zip -r SourceArti.zip *.*
 
   post_build:
     commands:
       - echo "Post-build phase - finished!"
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes
-  base-directory: 'tph_pipeline/SourceArti'  
+    - 'SourceArti.zip'
+    
