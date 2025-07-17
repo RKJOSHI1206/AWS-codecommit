@@ -20,5 +20,4 @@ phases:
       - echo "Post-build phase - finished!"
 artifacts:
   files:
-    - 'SourceArti.zip'
     - '*.*' 
